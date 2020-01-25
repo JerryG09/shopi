@@ -6,9 +6,6 @@ import getWidth from '../utils/getWidth'
 import HomepageHeading from './HomepageHeading';
 
 import {
-  Button,
-  Container,
-  Icon,
   Menu,
   Responsive,
   Segment,

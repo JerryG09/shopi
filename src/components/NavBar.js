@@ -1,9 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {
   Menu,
-  Responsive,
   Segment,
-  Visibility,
 } from 'semantic-ui-react';
 import Nav from './Nav'
 
@@ -28,4 +26,4 @@ const NavBAr = ({ fixed }) => {
   )
 }
 
-export default NavBAr
+export default NavBAr;

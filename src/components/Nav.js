@@ -11,7 +11,7 @@ const Nav = ({ fixed }) => {
 
   return (
     <Container>
-      <Menu.Item as={Link} name='home' to='/marketing' active>
+      <Menu.Item as={Link} name='home' to='/' active>
         Home
       </Menu.Item>
       <Menu.Item as={Link} name='shop' to='/shop'>Shop</Menu.Item>
