@@ -1,11 +1,11 @@
 import React from 'react'
 
-const ProductDetails = ()  => {
-  return (
-    <div>
-      ProductDetails
-    </div>
-  )
-}
+import Layout from '../components/Layout'
 
-export default ProductDetails
+const ProductsDetails = () => (
+  <Layout>
+    ProductsDetails....
+  </Layout>
+)
+
+export default ProductsDetails

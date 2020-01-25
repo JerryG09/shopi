@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Orders = ()  => {
-  return (
-    <div>
-      orders
-    </div>
-  )
-}
+import Layout from '../components/Layout'
+
+const Orders = () => (
+  <Layout>
+    Orders....
+  </Layout>
+)
 
 export default Orders

@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Cart = ()  => {
-  return (
-    <div>
-      Cart
-    </div>
-  )
-}
+import Layout from '../components/Layout'
+
+const Cart = () => (
+  <Layout>
+    Cart....
+  </Layout>
+)
 
 export default Cart
