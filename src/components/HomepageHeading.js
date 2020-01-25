@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+// import styled from 'styled-components'
 import {
   Button,
   Container,
@@ -7,11 +8,18 @@ import {
   Icon,
 } from 'semantic-ui-react';
 
+// const CustomHeader = styled.h1`
+//   font-size: ${props => (props.mobile ? '2em' : '4em')};
+//   font-weight: 'normal';
+//   margin-bottom: 0;
+//   margin-top: ${props => (props.mobile ? '1.5em' : '2em')}
+// `
+
 const HomepageHeading = ({ mobile }) => (
   <Container text>
     <Header
       as='h1'
-      content='Imagine-a-Company'
+      content='Fashion Collection'
       inverted
       style={{
         fontSize: mobile ? '2em' : '4em',
@@ -20,18 +28,20 @@ const HomepageHeading = ({ mobile }) => (
         marginTop: mobile ? '1.5em' : '3em',
       }}
     />
+    
     <Header
       as='h2'
-      content='Do whatever you want when you want to.'
+      content='Do you want to get good deals?'
       inverted
       style={{
-        fontSize: mobile ? '1.5em' : '1.7em',
+        fontSize: mobile ? '1.2em' : '1.7em',
         fontWeight: 'normal',
         marginTop: mobile ? '0.5em' : '1.5em',
       }}
     />
-    <Button primary size='huge'>
-      Get Started
+    <Button
+      primary size='huge' onClick={() => console.log('hi')}>
+      SHOP NOW
       <Icon name='right arrow' />
     </Button>
   </Container>

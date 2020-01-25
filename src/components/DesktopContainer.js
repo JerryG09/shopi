@@ -46,9 +46,9 @@ class DesktopContainer extends Component {
                 <Menu.Item as='a' active>
                   Home
                 </Menu.Item>
-                <Menu.Item as='a'>Work</Menu.Item>
-                <Menu.Item as='a'>Company</Menu.Item>
-                <Menu.Item as='a'>Careers</Menu.Item>
+                <Menu.Item as='a'>Shop</Menu.Item>
+                <Menu.Item as='a'>Services</Menu.Item>
+                <Menu.Item as='a'>Contact</Menu.Item>
                 <Menu.Item position='right'>
                   <Button as='a' inverted={!fixed}>
                     Log in
