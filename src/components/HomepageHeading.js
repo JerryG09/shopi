@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import { Link } from 'react-router-dom'
+
 // import styled from 'styled-components'
 import {
   Button,
@@ -40,7 +42,7 @@ const HomepageHeading = ({ mobile }) => (
       }}
     />
     <Button
-      primary size='huge' onClick={() => console.log('hi')}>
+      primary size='huge' as={Link} to='/shop'>
       SHOP NOW
       <Icon name='right arrow' />
     </Button>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom'
 import getWidth from '../utils/getWidth'
 
 import HomepageHeading from './HomepageHeading';
@@ -40,14 +41,14 @@ class MobileContainer extends Component {
           vertical
           visible={sidebarOpened}
         >
-          <Menu.Item as='a' active>
+          <Menu.Item as={Link} name='home' to='/home' active>
             Home
           </Menu.Item>
-          <Menu.Item as='a'>Shop</Menu.Item>
-          <Menu.Item as='a'>Services</Menu.Item>
-          <Menu.Item as='a'>Contact</Menu.Item>
-          <Menu.Item as='a'>Log in</Menu.Item>
-          <Menu.Item as='a'>Sign Up</Menu.Item>
+          <Menu.Item as={Link} name='shop' to='/shop'>Shop</Menu.Item>
+          <Menu.Item as={Link} name='services' to='/services'>Services</Menu.Item>
+          <Menu.Item as={Link} name='contact' to='/contact'>Contact</Menu.Item>
+          <Menu.Item as={Link} name='login' to='/login'>Log in</Menu.Item>
+          <Menu.Item as={Link} name='signup' to='/signup'>Sign Up</Menu.Item>
         </Sidebar>
 
         <Sidebar.Pusher dimmed={sidebarOpened}>
@@ -57,21 +58,21 @@ class MobileContainer extends Component {
             style={{ minHeight: 350, padding: '1em 0em' }}
             vertical
           >
-            <Container>
+            {/* <Container>
               <Menu inverted pointing secondary size='large'>
                 <Menu.Item onClick={this.handleToggle}>
                   <Icon name='sidebar' />
                 </Menu.Item>
                 <Menu.Item position='right'>
-                  <Button as='a' inverted>
+                  <Button name='login' to='/login' inverted>
                     Log in
                   </Button>
-                  <Button as='a' inverted style={{ marginLeft: '0.5em' }}>
+                  <Button name='signup' to='/signup' inverted style={{ marginLeft: '0.5em' }}>
                     Sign Up
                   </Button>
                 </Menu.Item>
               </Menu>
-            </Container>
+            </Container> */}
             <HomepageHeading mobile />
           </Segment>
 

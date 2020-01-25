@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import getWidth from '../utils/getWidth'
 
 import {
@@ -43,17 +44,17 @@ class DesktopContainer extends Component {
               size='large'
             >
               <Container>
-                <Menu.Item as='a' active>
+                <Menu.Item as={Link} name='home' to='/marketing' active>
                   Home
                 </Menu.Item>
-                <Menu.Item as='a'>Shop</Menu.Item>
-                <Menu.Item as='a'>Services</Menu.Item>
-                <Menu.Item as='a'>Contact</Menu.Item>
+                <Menu.Item as={Link} name='shop' to='/shop'>Shop</Menu.Item>
+                <Menu.Item as={Link} name='services' to='/services'>Services</Menu.Item>
+                <Menu.Item as={Link} name='contact' to='/contact'>Contact</Menu.Item>
                 <Menu.Item position='right'>
-                  <Button as='a' inverted={!fixed}>
+                  <Button as={Link} name='login' to='/login' inverted={!fixed}>
                     Log in
                   </Button>
-                  <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
+                  <Button as={Link} name='signup' to='/signup' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
                     Sign Up
                   </Button>
                 </Menu.Item>
