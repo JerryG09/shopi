@@ -1,18 +1,18 @@
 import React from 'react'
 
 import Layout from '../components/Layout'
-import Jumbotron from '../components/Jumbotron';
 import Pitch from '../components/Pitching'
 import About from '../components/About'
 import Testimonial from '../components/Testimonial'
+import HomepageHeading from '../components/HomepageHeading'
 
 const Home = () => (
   <Layout>
-    <Jumbotron />
+    <HomepageHeading mobile desktop />
     <Pitch />
     <About />
     <Testimonial />
   </Layout>
 )
 
-export default Home
+export default Home;
