@@ -1,13 +1,12 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import getWidth from '../utils/getWidth'
+import getWidth from '../utils/getWidth';
 
 import {
   Responsive,
   Visibility
 } from 'semantic-ui-react';
 import NavBar from '../components/NavBar';
-import Footer from '../components/Footer'
 
 class DesktopContainer extends Component {
   state = {}
@@ -31,7 +30,6 @@ class DesktopContainer extends Component {
 
         {children}
 
-        <Footer />
       </Responsive>
     )
   }

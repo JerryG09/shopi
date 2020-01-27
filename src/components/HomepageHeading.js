@@ -1,14 +1,14 @@
-import PropTypes from 'prop-types';
 import React from 'react';
-import { Link } from 'react-router-dom'
-
-// import styled from 'styled-components'
+import { Link } from 'react-router-dom';
 import {
   Button,
   Container,
   Header,
   Icon,
+  Segment
 } from 'semantic-ui-react';
+
+// import HomepageHeading from './HomepageHeading'
 
 // const CustomHeader = styled.h1`
 //   font-size: ${props => (props.mobile ? '2em' : '4em')};
@@ -17,40 +17,47 @@ import {
 //   margin-top: ${props => (props.mobile ? '1.5em' : '2em')}
 // `
 
-const HomepageHeading = ({ mobile }) => (
-  <Container text>
-    <Header
-      as='h1'
-      content='Fashion Collection'
-      inverted
-      style={{
-        fontSize: mobile ? '2em' : '4em',
-        fontWeight: 'normal',
-        marginBottom: 0,
-        marginTop: mobile ? '1.5em' : '3em',
-      }}
-    />
-    
-    <Header
-      as='h2'
-      content='Do you want to get good deals?'
-      inverted
-      style={{
-        fontSize: mobile ? '1.2em' : '1.7em',
-        fontWeight: 'normal',
-        marginTop: mobile ? '0.5em' : '1.5em',
-      }}
-    />
-    <Button
-      primary size='huge' as={Link} to='/shop'>
-      SHOP NOW
-      <Icon name='right arrow' />
-    </Button>
-  </Container>
-)
 
-HomepageHeading.propTypes = {
-  mobile: PropTypes.bool,
+const HomepageHeading = ({mobile}) => {
+
+  return (
+    <Segment
+      inverted
+      textAlign='center'
+      style={{ height:"90vh", padding: '1em 0em' }}
+      vertical
+    >
+      <Container style={{height:"100%", display: 'flex', flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
+        <Header
+          as='h1'
+          content='Fashion Collection'
+          inverted
+          style={{
+            fontSize: mobile ? '3em' : '4em',
+            fontWeight: 'normal',
+            marginBottom: 0,
+            // marginTop: mobile ? '3em' : '2em',
+          }}
+        />
+        
+        <Header
+          as='h2'
+          content='Do you want to get good deals?'
+          inverted
+          style={{
+            fontSize: mobile ? '1em' : '1.4em',
+            fontWeight: 'normal',
+            marginTop: mobile ? '0.5em' : '1.5em',
+          }}
+        />
+        <Button
+          primary size='huge' as={Link} to='/shop'>
+          SHOP NOW
+          <Icon name='right arrow' />
+        </Button>
+      </Container>
+    </Segment>
+  )
 }
 
-export default  HomepageHeading;
+export default HomepageHeading;

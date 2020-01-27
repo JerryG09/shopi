@@ -3,11 +3,14 @@ import React from 'react'
 
 import MobileContainer from './MobileContainer';
 import DesktopContainer from './DesktopContainer';
+import Footer from './Footer'
 
 const Layout = ({ children }) => (
   <div>
     <DesktopContainer>{children}</DesktopContainer>
     <MobileContainer>{children}</MobileContainer>
+    
+    <Footer />
   </div>
 )
 

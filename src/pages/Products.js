@@ -1,10 +1,11 @@
 import React from 'react'
 
-import Layout from '../components/Layout'
+import Layout from '../components/Layout';
+import ProductDesktopLayout from '../components/ProductDesktopLayout'
 
 const Products = () => (
   <Layout>
-    Products....
+    <ProductDesktopLayout />
   </Layout>
 )
 
