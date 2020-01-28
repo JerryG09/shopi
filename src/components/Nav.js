@@ -23,10 +23,7 @@ const Nav = ({ fixed }) => {
       <Menu.Item as={Link} name='contact' to='/contact' active={activeItem === 'contact'} />
       <Menu.Item position='right'>
         <Button as={Link} name='login' to='/login' inverted={!fixed}>
-          Log in
-        </Button>
-        <Button as={Link} name='signup' to='/signup' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
-          Sign Up
+          Get Started
         </Button>
       </Menu.Item>
     </Container>
